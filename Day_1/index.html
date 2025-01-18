@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Моя первая страница</title>
+        <style>
+            .reviews{
+                background-color: aliceblue;
+                border: 1px solid blueviolet;
+                color: #4aa22d;
+                padding: 10px;
+                display: flex;
+                gap: 20px;
+            }
+            .reviews img{
+                width: 100px;
+                border-radius: 50%;
+            }
+            .review{
+                border: 1px solid rgb(43, 226, 95);
+                margin-bottom: 20px;
+            }
+
+            .quote{
+                color: red;
+                font-weight: bold;
+                font-style: italic;
+                letter-spacing: 2px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Форма -->
+        <form>
+            <h2>Форма входа</h2>
+
+            <div class="input-field">
+                <label for="login">Введите логин:</label>
+                <input type="text" id="login" name="login" placeholder="Введите логин">
+            </div>
+
+            <div class="input-field">
+                <label for="">Введите пароль:</label>
+                <input type="password" maxlength="10" required name="password" placeholder="Введите пароль">
+            </div>
+            
+            <input type="submit" value="Войти">
+            <!-- index.html ? login=admin & password=123456 -->
+        </form>
+
+
+        <p>Lorem <b><i>ipsum dolor sit</i></b> amet consectetur adipisicing elit. <span class="quote">Accusantium ad pariatur</span> magni asperiores repudiandae quisquam nihil temporibus fugit quae laudantium.</p>
+
+        <!-- ссылки -->
+        <a href="index.html">Перейти <span>на главную</span> страницу</a><br>
+        <a href="news.html">Новости</a><br>
+        <a href="shop.html">Магазин</a><br>
+
+        <a href="https://www.specialist.ru/" target="_blank">Ссылка на Специалист</a><br>
+
+        <a href="https://unsplash.com/" target="_blank">
+            <img src="https://images.unsplash.com/photo-1736267739939-6ee19bbe7fae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" width="200" alt="Unsplash">
+        </a>
+
+        <!-- списки -->
+        <ul>
+            <li>Осень</li>
+            <li>Зима</li>
+            <li>Весна</li>
+            <li>Лето</li>
+        </ul>
+
+        <!-- вложенный список -->
+        <ul>
+            <li>Milk</li>
+            <li>
+              Cheese
+              <ul>
+                <li>Blue cheese</li>
+                <li>Feta</li>
+              </ul>
+            </li>
+        </ul>
+
+        <ol start="0" type="I">
+            <li>Пермь</li>
+            <li>Тула</li>
+            <li>СПБ</li>
+            <li>Владимир</li>
+            <li>Сыктывкар</li>
+        </ol>
+
+        <!-- меню навигации -->
+        <ul>
+            <li>
+                <a href="index.html">Перейти на главную страницу</a>
+            </li>
+
+            <li>
+                <a href="news.html">Новости</a> 
+            </li>
+
+            <li>
+                <a href="shop.html">Магазин</a>
+            </li>
+        </ul>
+
+
+        <!-- Отзывы -->
+        <div class="reviews" id="reviews">
+            <div class="review" id="review-1">
+                <h1>Иван Иванов</h1>
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D" alt="user-1">
+                <h2>Дата: 01.01.2024</h2>
+                <p>Хороший товар</p>
+            </div>
+            <div class="review" id="review-2">
+                <h1>Сергей Петров</h1>
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D" alt="user-2">
+                <h2>Дата: 10.01.2024</h2>
+                <p>Плохой товар</p>
+            </div>
+            <div class="review" id="review-3">
+                <h1>Иван Мамонтов</h1>
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D" alt="user-3">
+                <h2>Дата: 01.10.2024</h2>
+                <p>Пойдет</p>
+            </div>
+        </div> 
+        
+     
+
+        <!-- комментарий -->
+        <h1 style="color: #4aa22d;">Заголовок 1 уровня</h1>
+        <h2>Заголовок 1 уровня</h2>
+        <h3>Заголовок 1 уровня</h3>
+        <h4>Заголовок 1 уровня</h4>
+        <h5>Заголовок 1 уровня</h5>
+        <h6>Заголовок 1 уровня</h6>
+
+        <img src="images/pic-1.jpg" width="300" alt="Маковое поле" title="Маковое поле">
+        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" alt="Лес">
+
+        <h1>Привет</h1>
+        <p style="background-color: aquamarine; max-width: 500px; display: inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat, quos esse perspiciatis at officia aliquid omnis laboriosam hic dolore. Quasi quis et itaque veniam quos culpa? Aperiam, ipsa cumque!</p>
+        <a href="#">ссылка</a>
+    </body>
+</html>
