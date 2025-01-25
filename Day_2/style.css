@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    font-family: "Roboto", serif;
+}
+
+/* задаем стили для заголовков h1 */
+h1{
+    border: 3px solid blueviolet;
+    color: rgb(31, 67, 165);
+    margin: 10px;
+    padding: 10px;
+
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+p{
+    color: rebeccapurple;
+    margin: 10px;
+}
+
+/* задаем стили по названию класса */
+.par-1{
+    color: rgb(43, 226, 52);
+}
+
+/* задаем стили по ID - для стилизации не использовать! */
+#main-par{
+    color: blanchedalmond;
+}
+
+/* стили для списка городов */
+.cities{
+    max-width: 400px;
+    background-color: aliceblue;
+    border: 2px solid blueviolet;
+}
+
+/* стили для элементов списка внутри класса cities */
+.cities li{
+    border: 2px dashed red;
+}
+
+/* стили для одного элемента с классом my-sity */
+.cities .my-sity{
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.article{
+    background-color: aliceblue;
+    border: 5px solid burlywood;
+    color: red;
+    margin: 30px;
+    padding: 10px;
+}
+
+.article p{
+    background-color: aquamarine;
+    color: burlywood;
+    /* margin: 10px 15px 25px 20px; */
+    margin: 10px 20px;
+}
+
+.article p span{
+    border: 1px solid blue;
+}
+
+.article h2{
+    font-style: italic;
+    /* margin: 0 0 0 15px; */
+    margin: 0;
+    margin-left: 15px;
+}
+
+.long-par{
+    background-color: rgb(207, 229, 248);
+    border: 3px solid red;
+    max-width: 600px;
+    height: 200px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links{
+    max-width: 800px;
+    background-color: aliceblue;
+    border: 2px solid rgb(219, 234, 246);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.links a{
+    display: inline-block;
+   background-color: rgb(153, 216, 216); 
+   /* border: 2px solid rgb(122, 175, 175); */
+   border-bottom: 2px solid transparent;
+   border-radius: 5px;
+   color:rgb(31, 67, 165);
+   padding: 5px 10px;
+   /* margin-right: 10px; */
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: all 0.5s;
+}
+
+/* при наведении на ссылки */
+.links a:hover{
+    background-color: rgb(167, 216, 153);
+    border-bottom: 2px solid rgb(35, 149, 149);
+}
+
+.inline{
+    width: 200px;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+/* при наведении мышью меняем стили */
+.inline:hover{
+    background-color: rgb(217, 250, 215);
+    color: rgb(0, 255, 21);
+    border-radius: 10px;
+    /* transform: rotate(0.01turn); */
+    /* transform: translateY(-5px); */
+}
+
+/* абсолютное позиционирование */
+/* контейнер */
+.abs-container{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(215, 235, 250);
+
+    position: relative;
+}
+/* дочерний элемент */
+.abs-container .child{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(177, 207, 230);
+
+    position: absolute;
+    /* top: 100px;
+    left: 100px; */
+    /* right: -50px;
+    top: -50px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.user{
+    max-width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.user img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.user h2{
+    /* text-align: right; */
+    font-size: 40px;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.user p{
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 300;
+    color: black;
+}
