@@ -1,0 +1,50 @@
+h1{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+p{
+    background-color: aliceblue;
+    color: brown;
+}
+
+/* адаптация блока с пользователями */
+.users{
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 20px 40px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.users .user{
+    background-color: rgb(216, 234, 250);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.users .user img{
+    width: 100%;
+}
+
+/* адаптация сетки */
+.grid{
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgb(244, 255, 240);
+    padding: 20px 40px;
+    border-radius: 15px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid div{
+    background-color: rgb(220, 250, 216);
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,54 @@
+/* файл для медиазапросов */
+
+/* стили для экранов шириной менее 1024 пикселя */
+@media(max-width: 1024px){
+    h1{
+        font-size: 32px;
+        color: red;
+    }
+
+    p{
+        background-color: rgb(242, 255, 240);
+        color: rgb(63, 165, 42);
+    }
+
+    .users{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 800px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* стили для экранов шириной менее 600 пикселей */
+@media(max-width: 600px){
+    h1{
+        font-size: 26px;
+        color:rgb(63, 165, 42);
+    }
+
+    p{
+        background-color: blanchedalmond;
+        color:darkblue;
+        font-size: 14px;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 450px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
