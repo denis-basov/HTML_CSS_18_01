@@ -12,4 +12,3 @@
     </form>
 </body>
 </html>
-https://github.com/denis-basov/HTML_CSS_18_01.git
